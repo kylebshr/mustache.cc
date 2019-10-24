@@ -8,5 +8,13 @@
 import Foundation
 
 struct Ride: Codable {
-    var title: String
+    let date: String
+    let title: String
+    let time: String
+    let location: String
+    let distance: Int
+    let elevation: Int
+    let difficulty: String
+    let description: String
+    let imageName: String
 }

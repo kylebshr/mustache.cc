@@ -27,9 +27,7 @@ final class Application {
     }
 
     private func rides(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
-        let ride = Ride(title: "Saturday, Oct. 26: Mill Valley")
-
-        try response.render("rides.stencil", with: ride)
+        try response.render("rides.stencil", context: ["rides": upcomingRides])
         response.status(.OK)
         next()
     }

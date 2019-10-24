@@ -2,14 +2,13 @@
 
 {% block content %}
 <div class="rides-wrapper">
-    <!-- <h1>{{ date }}: {{ title }}</h1>
-    <h2>{{ time }} • {{ location }} • {{ distance }} {{ elevation }} • {{ difficulty }}</h2>
-    <p>{{ description }}</p> -->
-
-    <h1>Saturday, Oct. 26: Mill Valley</h1>
-    <h2>9am Rollout • Meet at Fell &amp; Baker • 32mi 1300ft</h2>
-    <p>Join us for our weekend ride! We’ll start at the Panhandle, head over Golden Gate bridge, and ride through beautiful Marin into Mill Valley. After a stop at Equator coffee for drinks and pastries, we’ll do it in reverse!</p>
-
-    <img src="assets/img/mill-valley.png">
+    {% for ride in rides %}
+    <div class="ride">
+        <h1>{{ ride.date }}: {{ ride.title }}</h1>
+        <h2>{{ ride.time }} Rollout • Meet at {{ ride.location }} • {{ ride.distance }} {{ ride.elevation }} • {{ ride.difficulty }}</h2>
+        <p>{{ ride.description }}</p>
+        <img src="/assets/img/{{ ride.imageName }}">
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}
