@@ -12,6 +12,9 @@ final class Application {
         router.all(middleware: Compression())
         router.add(templateEngine: StencilTemplateEngine())
 
+        let options = StaticFileServer.Options(serveIndexForDirectory: false)
+        router.all("/assets", middleware: StaticFileServer(path: "./assets", options: options))
+
         router.get("/", handler: rides)
 
         let port = port ?? 8080
