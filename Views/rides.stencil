@@ -1,0 +1,7 @@
+{% extends "layout.stencil" %}
+
+{% block content %}
+<div class="rides-wrapper">
+    {{ title }}
+</div>
+{% endblock %}
