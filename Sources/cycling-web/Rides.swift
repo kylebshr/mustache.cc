@@ -9,7 +9,7 @@ let upcomingRides = [
         location: "Fell & Baker",
         distance: 28,
         elevation: 1400,
-        difficulty: "on the longer side",
+        difficulty: "depends who shows up 😄",
         description: """
         Join us for a long weekend ride! We’ll start at the Panhandle, head over Golden Gate bridge, and ride through beautiful Marin into Mill Valley. After a stop at Equator coffee for drinks and pastries, we’ll do it in reverse!
         """,
