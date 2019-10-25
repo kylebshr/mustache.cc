@@ -360,14 +360,12 @@ nav ul li a span {
 .rides-wrapper a {
     color: #366df2;
     text-decoration: none;
-    -webkit-transition: all .25s ease-out;
-    transition: all .25s ease-out
+    transition: opacity .25s ease-out
 }
 
 .rides-wrapper a:hover {
     opacity: 0.7;
-    -webkit-transition: all .25s ease-out;
-    transition: all .25s ease-out
+    transition: opacity .25s ease-out
 }
 
 .rides-wrapper img {
