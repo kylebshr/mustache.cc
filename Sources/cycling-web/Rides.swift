@@ -20,7 +20,7 @@ let upcomingRides = [
     Ride(
         date: "Wednesday, Oct. 30",
         title: "Twin Peaks",
-        time: "6:30am",
+        time: "6:45am",
         location: "Fell & Baker",
         distance: 7,
         elevation: 650,
