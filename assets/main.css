@@ -160,7 +160,7 @@ body {
 }
 
 strong {
-    font-weight: 500
+    font-weight: 500;
 }
 
 h1,
@@ -347,13 +347,13 @@ nav ul li a span {
 
 .rides-wrapper h3 {
     font-size: 0.95rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
 }
 
 @media (min-width: 640px) {
     .rides-wrapper h3 {
         font-size: 1.2rem;
-        line-height: 1.6rem;
+        line-height: 1.2rem;
     }
 }
 

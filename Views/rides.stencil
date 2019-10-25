@@ -8,11 +8,11 @@
     {% for ride in rides %}
     <div class="ride">
         <h2>{{ ride.date }}: {{ ride.title }}</h2>
-        <h3>
-        {{ ride.time }} Rollout &middot; Meet at {{ ride.location }} &middot; {{ ride.distance }}mi {{ ride.elevation }}ft
-        <br>
-        Notes: {{ ride.difficulty }}
-        </h3>
+        <h3>When: <strong>{{ ride.time }} rollout</strong></h3>
+        <h3>Where: <strong>{{ ride.location }}</strong></h3>
+        <h3>Distance: <strong>{{ ride.distance }}mi</strong></h3>
+        <h3>Elevation: <strong>{{ ride.elevation }}ft</strong></h3>
+        <h3>Difficulty: <strong>{{ ride.difficulty }}</strong></h3>
         <p>{{ ride.description }}</p>
         <a target="_blank" href="{{ ride.link }}">
         <img src="/assets/img/{{ ride.imageName }}">
