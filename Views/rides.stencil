@@ -2,14 +2,17 @@
 
 {% block content %}
 <div class="rides-wrapper">
+
+    <h1>Lyft goes biking! Join us in <a href="https://app.slack.com/client/T029A67TC/CKG3T40CV">#cycling</a></h1>
+
     {% for ride in rides %}
     <div class="ride">
-        <h1>{{ ride.date }}: {{ ride.title }}</h1>
-        <h2>
+        <h2>{{ ride.date }}: {{ ride.title }}</h2>
+        <h3>
         {{ ride.time }} Rollout &middot; Meet at {{ ride.location }} &middot; {{ ride.distance }}mi {{ ride.elevation }}ft
         <br>
         Notes: {{ ride.difficulty }}
-        </h2>
+        </h3>
         <p>{{ ride.description }}</p>
         <a target="_blank" href="{{ ride.link }}">
         <img src="/assets/img/{{ ride.imageName }}">

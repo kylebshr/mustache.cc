@@ -173,13 +173,13 @@ h6 {
     color: #292936
 }
 
-h1 {
+h2 {
     font-size: 1.35rem;
     padding: 0.5rem 0;
     font-weight: 500;
 }
 
-h2 {
+h3 {
     font-size: 0.9rem;
     padding: 0.25rem 0;
     color: #63637B;
@@ -299,11 +299,17 @@ nav ul li a span {
 }
 
 .rides-wrapper h1 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.rides-wrapper h2 {
     line-height: 1.5rem;
 }
 
 @media (min-width: 640px) {
-    .rides-wrapper h1 {
+    .rides-wrapper h2 {
         font-size: 2rem;
         line-height: 2.25rem;
     }
@@ -339,29 +345,27 @@ nav ul li a span {
     margin-left: 0
 }
 
-.rides-wrapper h2 {
+.rides-wrapper h3 {
     font-size: 1rem;
     line-height: 1.4rem;
 }
 
 @media (min-width: 640px) {
-    .rides-wrapper h2 {
+    .rides-wrapper h3 {
         font-size: 1.325rem;
         line-height: 1.75rem;
     }
 }
 
 .rides-wrapper a {
-    color: #333334;
+    color: #366df2;
     text-decoration: none;
-    box-shadow: inset 0 -2px 0 0 #292936;
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out
 }
 
 .rides-wrapper a:hover {
-    color: #292936;
-    box-shadow: inset 0 -14px 0 0 lightgrey;
+    opacity: 0.5;
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out
 }
