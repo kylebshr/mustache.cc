@@ -13,7 +13,8 @@ let upcomingRides = [
         description: """
         Join us for a long weekend ride! We’ll start at the Panhandle, head over Golden Gate bridge, and ride through beautiful Marin into Mill Valley. After a stop at Equator coffee for drinks and pastries, we’ll do it in reverse!
         """,
-        imageName: "mill-valley.png"
+        imageName: "mill-valley.png",
+        link: "https://www.strava.com/routes/22369712"
     ),
 
     Ride(
@@ -27,7 +28,8 @@ let upcomingRides = [
         description: """
         Let's watch the sunrise from Twin Peaks. This ride is short and sweet, and sure to open up your lungs. If you live closer to the Lyft office, it's likely some people will split off and head towards Market.
         """,
-        imageName: "twin-peaks.png"
+        imageName: "twin-peaks.png",
+        link: "https://www.strava.com/routes/22372536"
     )
 
 ]

@@ -17,4 +17,5 @@ struct Ride: Codable {
     let difficulty: String
     let description: String
     let imageName: String
+    let link: String
 }

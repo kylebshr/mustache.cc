@@ -11,7 +11,9 @@
         Notes: {{ ride.difficulty }}
         </h2>
         <p>{{ ride.description }}</p>
+        <a target="_blank" href="{{ ride.link }}">
         <img src="/assets/img/{{ ride.imageName }}">
+        </a>
         {% if not forloop.last %}<div class="separator"></div>{% endif %}
     </div>
     {% endfor %}
