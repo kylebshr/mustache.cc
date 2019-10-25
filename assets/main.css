@@ -365,7 +365,7 @@ nav ul li a span {
 }
 
 .rides-wrapper a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out
 }
