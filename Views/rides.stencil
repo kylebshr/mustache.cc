@@ -5,9 +5,10 @@
     {% for ride in rides %}
     <div class="ride">
         <h1>{{ ride.date }}: {{ ride.title }}</h1>
-        <h2>{{ ride.time }} Rollout • Meet at {{ ride.location }} • {{ ride.distance }} {{ ride.elevation }} • {{ ride.difficulty }}</h2>
+        <h2>{{ ride.time }} Rollout • Meet at {{ ride.location }}<br>{{ ride.distance }}mi {{ ride.elevation }}ft • {{ ride.difficulty }}</h2>
         <p>{{ ride.description }}</p>
         <img src="/assets/img/{{ ride.imageName }}">
+        {% if not forloop.last %}<div class="separator"></div>{% endif %}
     </div>
     {% endfor %}
 </div>
