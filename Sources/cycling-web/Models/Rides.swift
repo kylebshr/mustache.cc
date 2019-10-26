@@ -3,7 +3,7 @@ import Foundation
 let upcomingRides: [Ride] = [
 
     Ride(
-        date: Date(timeIntervalSince1970: 1572105600),
+        date: Date(timeIntervalSince1970: 1572080400),
         title: "Mill Valley",
         location: "Fell & Baker",
         miles: 28,
@@ -17,7 +17,7 @@ let upcomingRides: [Ride] = [
     ),
 
     Ride(
-        date: Date(timeIntervalSince1970: 1572443100),
+        date: Date(timeIntervalSince1970: 1572417900),
         title: "Twin Peaks",
         location: "Fell & Baker",
         miles: 7,
