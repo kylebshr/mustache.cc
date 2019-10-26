@@ -9,17 +9,16 @@ final class Application {
     private let router = Router()
 
     init(port: Int? = ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init)) {
-
         router.all(middleware: Compression())
+
         configureStencil()
+        configureAssets()
 
-        let options = StaticFileServer.Options(serveIndexForDirectory: false)
-        router.all("/assets", middleware: StaticFileServer(path: "./assets", options: options))
+        Persistence.setUp()
 
-        router.get("/", handler: rides)
+        addRideRoutes(to: router)
 
         let port = port ?? 8080
-
         Kitura.addHTTPServer(onPort: port, with: router)
     }
 
@@ -27,14 +26,12 @@ final class Application {
         Kitura.run()
     }
 
-    private func rides(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
-        try response.render("rides.stencil", context: ["rides": upcomingRides])
-        response.status(.OK)
-        next()
+    private func configureAssets() {
+        let options = StaticFileServer.Options(serveIndexForDirectory: false)
+        router.all("/assets", middleware: StaticFileServer(path: "./assets", options: options))
     }
 
     private func configureStencil() {
-
         let ext = Extension()
         ext.registerFilter("titleDateFormatter", filter: Filter.titleDateFormatter)
         ext.registerFilter("meetupTimeFormatter", filter: Filter.meetupTimeFormatter)
@@ -42,4 +39,5 @@ final class Application {
         let engine = StencilTemplateEngine(extension: ext)
         router.add(templateEngine: engine)
     }
+
 }

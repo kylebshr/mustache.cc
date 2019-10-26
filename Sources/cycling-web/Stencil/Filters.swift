@@ -1,10 +1,3 @@
-//
-//  Filters.swift
-//  CHTTPParser
-//
-//  Created by Kyle Bashour on 10/25/19.
-//
-
 import Foundation
 
 private let titleFormatter: DateFormatter = {

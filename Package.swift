@@ -9,13 +9,25 @@ let package = Package(
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.8.0"),
         .package(url: "https://github.com/IBM-Swift/Kitura-Compression.git", from: "2.2.2"),
         .package(url: "https://github.com/IBM-Swift/Kitura-StencilTemplateEngine.git", from: "1.11.1"),
+        .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM", from: "0.6.0"),
+        .package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL", from: "2.1.1"),
     ],
     targets: [
         .target(
             name: "cycling-web",
-            dependencies: ["Kitura", "KituraStencil", "KituraCompression"]),
+            dependencies: [
+                "Kitura",
+                "KituraStencil",
+                "KituraCompression",
+                "SwiftKueryORM",
+                "SwiftKueryPostgreSQL",
+            ]
+        ),
         .testTarget(
             name: "cycling-webTests",
-            dependencies: ["cycling-web"]),
+            dependencies: [
+                "cycling-web",
+            ]
+        ),
     ]
 )
