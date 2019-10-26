@@ -2,6 +2,7 @@ import Foundation
 import Kitura
 import KituraCompression
 import KituraStencil
+import Stencil
 
 final class Application {
 
@@ -10,7 +11,7 @@ final class Application {
     init(port: Int? = ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init)) {
 
         router.all(middleware: Compression())
-        router.add(templateEngine: StencilTemplateEngine())
+        configureStencil()
 
         let options = StaticFileServer.Options(serveIndexForDirectory: false)
         router.all("/assets", middleware: StaticFileServer(path: "./assets", options: options))
@@ -30,5 +31,15 @@ final class Application {
         try response.render("rides.stencil", context: ["rides": upcomingRides])
         response.status(.OK)
         next()
+    }
+
+    private func configureStencil() {
+
+        let ext = Extension()
+        ext.registerFilter("titleDateFormatter", filter: Filter.titleDateFormatter)
+        ext.registerFilter("meetupTimeFormatter", filter: Filter.meetupTimeFormatter)
+
+        let engine = StencilTemplateEngine(extension: ext)
+        router.add(templateEngine: engine)
     }
 }
