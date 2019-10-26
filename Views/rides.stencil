@@ -1,7 +1,7 @@
 {% extends "layout.stencil" %}
 
 {% block content %}
-<div class="rides-wrapper">
+<div class="content rides-wrapper">
 
     <h1>Lyft goes biking! Join us in <a href="https://app.slack.com/client/T029A67TC/CKG3T40CV">#cycling</a></h1>
 

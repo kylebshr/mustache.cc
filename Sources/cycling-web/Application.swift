@@ -18,6 +18,7 @@ final class Application {
         Persistence.setUp()
 
         addRideRoutes(to: router)
+        addAdminRoutes(to: router)
 
         KituraOpenAPI.addEndpoints(to: router)
 
