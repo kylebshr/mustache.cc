@@ -9,6 +9,7 @@ let package = Package(
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.8.0"),
         .package(url: "https://github.com/IBM-Swift/Kitura-Compression.git", from: "2.2.2"),
         .package(url: "https://github.com/IBM-Swift/Kitura-StencilTemplateEngine.git", from: "1.11.1"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.3.0"),
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM", from: "0.6.0"),
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL", from: "2.1.1"),
     ],
@@ -19,6 +20,7 @@ let package = Package(
                 "Kitura",
                 "KituraStencil",
                 "KituraCompression",
+                "KituraOpenAPI",
                 "SwiftKueryORM",
                 "SwiftKueryPostgreSQL",
             ]

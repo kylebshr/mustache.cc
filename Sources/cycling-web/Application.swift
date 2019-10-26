@@ -1,6 +1,7 @@
 import Foundation
 import Kitura
 import KituraCompression
+import KituraOpenAPI
 import KituraStencil
 import Stencil
 
@@ -17,6 +18,8 @@ final class Application {
         Persistence.setUp()
 
         addRideRoutes(to: router)
+
+        KituraOpenAPI.addEndpoints(to: router)
 
         let port = port ?? 8080
         Kitura.addHTTPServer(onPort: port, with: router)
