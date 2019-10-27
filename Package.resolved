@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "12d2bf3ec7207ec3cd004b9582f69ef5fae1da3b",
+          "version": "1.0.32"
+        }
+      },
+      {
         "package": "Socket",
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
@@ -56,6 +65,24 @@
         }
       },
       {
+        "package": "Kitura-Credentials",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Credentials.git",
+        "state": {
+          "branch": null,
+          "revision": "1daf65e3f89280fb22afbb9d46d15c89d2f7918c",
+          "version": "2.4.1"
+        }
+      },
+      {
+        "package": "Kitura-CredentialsHTTP",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git",
+        "state": {
+          "branch": null,
+          "revision": "63300995182ff0a061ef5b5e6da6f76edfa18377",
+          "version": "2.1.3"
+        }
+      },
+      {
         "package": "Kitura-net",
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
         "state": {
@@ -71,6 +98,15 @@
           "branch": null,
           "revision": "f8cffe163cc75de00cb187c6df06afcb5ed26508",
           "version": "1.3.0"
+        }
+      },
+      {
+        "package": "Kitura-Session",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Session.git",
+        "state": {
+          "branch": null,
+          "revision": "b7c3476e588c8902f067ea89b87db65f242401b4",
+          "version": "3.3.4"
         }
       },
       {
