@@ -19,7 +19,7 @@ private func index(request: RouterRequest, response: RouterResponse, next: @esca
     try response.render("login.stencil", context: [:])
 }
 
-private func getRides(profile: BasicAuth, completion: @escaping ([Ride]?, RequestError?) -> Void) {
+private func getRides(completion: @escaping ([Ride]?, RequestError?) -> Void) {
     Ride.findAll(completion)
 }
 
@@ -27,7 +27,7 @@ private func getRide(id: String, completion: @escaping (Ride?, RequestError?) ->
     Ride.find(id: id, completion)
 }
 
-private func addRide(ride: Ride, completion: @escaping (Ride?, RequestError?) -> Void) {
+private func addRide(profile: BasicAuth, ride: Ride, completion: @escaping (Ride?, RequestError?) -> Void) {
     var savedRide = ride
     savedRide.id = UUID().uuidString
     savedRide.save(completion)
@@ -35,10 +35,10 @@ private func addRide(ride: Ride, completion: @escaping (Ride?, RequestError?) ->
     Log.info("Created ride with id \(savedRide.id ?? "")")
 }
 
-private func deleteRide(id: String, completion: @escaping (RequestError?) -> Void) {
+private func deleteRide(profile: BasicAuth, id: String, completion: @escaping (RequestError?) -> Void) {
     Ride.delete(id: id, completion)
 }
 
-private func updateRide(id: String, ride: Ride, completion: @escaping (Ride?, RequestError?) -> Void) {
+private func updateRide(profile: BasicAuth, id: String, ride: Ride, completion: @escaping (Ride?, RequestError?) -> Void) {
     ride.update(id: id, completion)
 }
