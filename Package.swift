@@ -13,6 +13,7 @@ let package = Package(
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM", from: "0.6.0"),
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL", from: "2.1.1"),
         .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git", from: "2.1.3"),
+        .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.0.0"),
     ],
     targets: [
         .target(
@@ -25,6 +26,7 @@ let package = Package(
                 "CredentialsHTTP",
                 "SwiftKueryORM",
                 "SwiftKueryPostgreSQL",
+                "HeliumLogger",
             ]
         ),
         .testTarget(

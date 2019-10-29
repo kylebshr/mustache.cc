@@ -1,4 +1,5 @@
 import Foundation
+import HeliumLogger
 import Kitura
 import KituraCompression
 import KituraOpenAPI
@@ -10,6 +11,9 @@ final class Application {
     private let router = Router()
 
     init(port: Int? = ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init)) {
+
+        HeliumLogger.use()
+
         router.all(middleware: Compression())
 
         configureStencil()
