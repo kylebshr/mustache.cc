@@ -3,16 +3,16 @@ import Foundation
 let upcomingRides: [Ride] = [
 
     Ride(
-        date: Date(timeIntervalSince1970: 1572417900),
+        date: Date(timeIntervalSince1970: 1572417000),
         title: "Twin Peaks",
         location: "Fell & Baker",
-        miles: 7,
-        elevation: 650,
-        difficulty: "short but climby",
+        miles: 14,
+        elevation: 950,
+        difficulty: "Accomodating",
         description: """
-        Let's watch the sunrise from Twin Peaks. This ride is short and sweet, and sure to open up your lungs. If you live closer to the Lyft office, it's likely some people will split off and head towards Market.
+        Let's watch the sunrise from Twin Peaks. On the way there, we'll stop by Trouble Coffee for espresso, toast and metal music ☕️🍞🤘 Depending on the group, we may switch up the route and descend straight to Market.
         """,
-        imageName: "twin-peaks.png",
+        imageName: "twin-trouble.png",
         link: URL(string: "https://www.strava.com/routes/22372536")!
     )
 
