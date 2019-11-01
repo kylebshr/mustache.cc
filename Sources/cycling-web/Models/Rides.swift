@@ -3,17 +3,17 @@ import Foundation
 let upcomingRides: [Ride] = [
 
     Ride(
-        date: Date(timeIntervalSince1970: 1572417000),
-        title: "Twin Peaks",
-        location: "Fell & Baker",
-        miles: 14,
-        elevation: 950,
-        difficulty: "Accomodating",
+        date: Date(timeIntervalSince1970: 1572768000),
+        title: "Just Tunitas",
+        location: "Fell & Masonic",
+        miles: 82,
+        elevation: 5800,
+        difficulty: "Long & Hard",
         description: """
-        Let's watch the sunrise from Twin Peaks. On the way there, we'll stop by Trouble Coffee for espresso, toast and metal music ☕️🍞🤘 Depending on the group, we may switch up the route and descend straight to Market.
+        Join Julien for a ride to Tunitas Creek down south. It's a long day in the saddle and there isn't a ton of options to stop for food, so come ready with your own fuel. There are at least three/four escape routes if folks want to join but would prefer to go for  a shorter distance.
         """,
-        imageName: "twin-trouble.png",
-        link: URL(string: "https://www.strava.com/routes/22372536")!
+        imageName: "tunitas.png",
+        link: URL(string: "https://www.strava.com/routes/22453740")!
     )
 
 ]
