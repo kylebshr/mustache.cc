@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "cycling-web",
+    name: "mustache",
     dependencies: [
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.8.0"),
         .package(url: "https://github.com/IBM-Swift/Kitura-Compression.git", from: "2.2.2"),
@@ -12,10 +12,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "cycling-web",
+            name: "mustache",
             dependencies: ["Kitura", "KituraStencil", "KituraCompression"]),
         .testTarget(
-            name: "cycling-webTests",
-            dependencies: ["cycling-web"]),
+            name: "mustacheTests",
+            dependencies: ["mustache"]),
     ]
 )

@@ -1,3 +1,3 @@
-# cycling-web
+# mustache.cc
 
-A description of this package.
+Website for managing group rides.
