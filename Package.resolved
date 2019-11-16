@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "12d2bf3ec7207ec3cd004b9582f69ef5fae1da3b",
+          "version": "1.0.32"
+        }
+      },
+      {
         "package": "Socket",
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
@@ -17,6 +26,33 @@
           "branch": null,
           "revision": "d6616def31a12088034f0a63ed4646772eff5bce",
           "version": "1.0.50"
+        }
+      },
+      {
+        "package": "Configuration",
+        "repositoryURL": "https://github.com/IBM-Swift/Configuration.git",
+        "state": {
+          "branch": null,
+          "revision": "da98da148509a3d7bd61fe01e7ade8926b52026b",
+          "version": "3.0.4"
+        }
+      },
+      {
+        "package": "FileKit",
+        "repositoryURL": "https://github.com/IBM-Swift/FileKit.git",
+        "state": {
+          "branch": null,
+          "revision": "26911acde61a3556b7583f84180048ea6a03973c",
+          "version": "0.0.2"
+        }
+      },
+      {
+        "package": "HeliumLogger",
+        "repositoryURL": "https://github.com/IBM-Swift/HeliumLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "146a36c2a91270e4213fa7d7e8192cd2e55d0ace",
+          "version": "1.9.0"
         }
       },
       {
@@ -38,12 +74,48 @@
         }
       },
       {
+        "package": "Kitura-Credentials",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Credentials.git",
+        "state": {
+          "branch": null,
+          "revision": "1daf65e3f89280fb22afbb9d46d15c89d2f7918c",
+          "version": "2.4.1"
+        }
+      },
+      {
+        "package": "Kitura-CredentialsHTTP",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git",
+        "state": {
+          "branch": null,
+          "revision": "63300995182ff0a061ef5b5e6da6f76edfa18377",
+          "version": "2.1.3"
+        }
+      },
+      {
         "package": "Kitura-net",
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
         "state": {
           "branch": null,
           "revision": "00985729329b73f3e20e40ec43071e4c294dfea3",
           "version": "2.4.0"
+        }
+      },
+      {
+        "package": "KituraOpenAPI",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-OpenAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "f8cffe163cc75de00cb187c6df06afcb5ed26508",
+          "version": "1.3.0"
+        }
+      },
+      {
+        "package": "Kitura-Session",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Session.git",
+        "state": {
+          "branch": null,
+          "revision": "b7c3476e588c8902f067ea89b87db65f242401b4",
+          "version": "3.3.4"
         }
       },
       {
@@ -107,6 +179,42 @@
           "branch": null,
           "revision": "0e9a78d6584e3812cd9c09494d5c7b483e8f533c",
           "version": "0.13.1"
+        }
+      },
+      {
+        "package": "CloudFoundryEnv",
+        "repositoryURL": "https://github.com/IBM-Swift/Swift-cfenv.git",
+        "state": {
+          "branch": null,
+          "revision": "b6625a49d65f83036f0e9922b7e9f2fa66cb623e",
+          "version": "6.0.3"
+        }
+      },
+      {
+        "package": "SwiftKuery",
+        "repositoryURL": "https://github.com/IBM-Swift/Swift-Kuery.git",
+        "state": {
+          "branch": null,
+          "revision": "d8e7cba51c6ca75de23b0229f584b536492ce23e",
+          "version": "3.0.1"
+        }
+      },
+      {
+        "package": "SwiftKueryORM",
+        "repositoryURL": "https://github.com/IBM-Swift/Swift-Kuery-ORM",
+        "state": {
+          "branch": null,
+          "revision": "2c8638e787f4f48e4dd98cb162b87d08b5001d61",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "package": "SwiftKueryPostgreSQL",
+        "repositoryURL": "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL",
+        "state": {
+          "branch": null,
+          "revision": "b0d44d2521f82cda1da800560a03a9c807f0e784",
+          "version": "2.1.1"
         }
       },
       {
