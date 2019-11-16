@@ -1,1 +1,1 @@
-web: cycling-web
+web: mustache
