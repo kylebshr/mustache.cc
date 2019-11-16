@@ -290,7 +290,7 @@ nav ul li a span {
     display: none
 }
 
-.content {
+.rides-wrapper {
     width: 100%;
     max-width: 40rem;
     margin: auto;
