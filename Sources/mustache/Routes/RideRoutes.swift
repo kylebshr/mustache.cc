@@ -2,7 +2,6 @@ import Foundation
 import Kitura
 import LoggerAPI
 
-
 func addRideRoutes(to router: Router) {
     router.get("/", handler: index)
 }
@@ -22,4 +21,3 @@ private func index(request: RouterRequest, response: RouterResponse, next: @esca
         }
     }
 }
-

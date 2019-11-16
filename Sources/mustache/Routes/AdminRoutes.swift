@@ -2,7 +2,6 @@ import Foundation
 import Kitura
 import LoggerAPI
 
-
 func addAdminRoutes(to router: Router) {
     router.get("/admin", handler: index)
 
