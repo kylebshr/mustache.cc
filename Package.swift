@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "mustache",
+    platforms: [
+        .macOS(.v10_14),
+    ],
     dependencies: [
         .package(url: "https://github.com/IBM-Swift/Kitura", .upToNextMajor(from: "2.9.0")),
         .package(url: "https://github.com/IBM-Swift/Kitura-Compression.git", .upToNextMajor(from: "2.2.2")),

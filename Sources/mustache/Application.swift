@@ -18,6 +18,7 @@ final class Application {
 
         configureStencil()
         configureAssets()
+        configureCoders()
 
         Persistence.setUp()
 
@@ -48,4 +49,17 @@ final class Application {
         router.add(templateEngine: engine)
     }
 
+    private func configureCoders() {
+        router.encoders[.json] = {
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .iso8601
+            return encoder
+        }
+
+        router.decoders[.json] = {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return decoder
+        }
+    }
 }

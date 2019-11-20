@@ -1,5 +1,6 @@
 import Foundation
 import Kitura
+import SwiftKueryORM
 import LoggerAPI
 
 func addRideRoutes(to router: Router) {
@@ -14,8 +15,18 @@ private func index(request: RouterRequest, response: RouterResponse, next: @esca
             return
         }
 
+        guard let today = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date()) else {
+            let error = "Service unavailable: unable to load rides"
+            response.status(.serviceUnavailable).send(json: ["Message": error])
+            return
+        }
+
+        let currentRides = rides.filter {
+            $0.date >= today
+        }
+
         do {
-            try response.render("rides.stencil", context: ["rides": rides])
+            try response.render("rides.stencil", context: ["rides": currentRides])
         } catch {
             response.status(.internalServerError).send(error.localizedDescription)
         }
